@@ -352,3 +352,10 @@ body.nav-open nav {
                 linear-gradient(to right, var(--celeste) 50%, var(--celeste) 50%);
   }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1431px) {
+.pasivos{
+padding-left:60px;
+}
+}
