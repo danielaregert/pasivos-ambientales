@@ -1,0 +1,338 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --celeste: #37e1ee;
+  --negro: #111719;
+}
+
+.bg-celeste {
+  background-color: var(--celeste);
+}
+
+.bg-black {
+  background-color: var(--negro);
+}
+
+.text-celeste {
+  color: var(--celeste);
+}
+
+.text-black {
+  color: var(--negro);
+}
+
+.hero-title {
+  line-height: 0.75;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    line-height: 0.88 !important;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, transparent 60%, var(--negro) 100%);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--celeste);
+}
+
+.notas-pagination .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.notas-pagination .swiper-pagination-bullet-active {
+  background: var(--celeste);
+}
+
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: var(--negro);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding: 80px 24px 40px;
+  overflow-y: auto;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 280ms ease-out, transform 280ms ease-out;
+}
+
+#mobile-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#mobile-menu a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#mobile-menu a:hover {
+  color: #37e1ee;
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+body.nav-open nav {
+  border-bottom-color: transparent;
+}
+
+.nav-burger .icon-open {
+  display: block;
+}
+
+.nav-burger .icon-close {
+  display: none;
+}
+
+.nav-burger[aria-expanded="true"] .icon-open {
+  display: none;
+}
+
+.nav-burger[aria-expanded="true"] .icon-close {
+  display: block;
+}
+
+.reveal {
+  opacity: 0;
+}
