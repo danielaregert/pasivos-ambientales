@@ -336,3 +336,19 @@ body.nav-open nav {
 .reveal {
   opacity: 0;
 }
+
+.bg-caso {
+  background-color: var(--celeste);
+}
+
+@media (min-width: 992px) {
+  .bg-quien {
+    background: url('assets/quien.png') right center / auto 199% no-repeat,
+                linear-gradient(to right, var(--negro) 50%, var(--negro) 50%);
+  }
+
+  .bg-caso {
+    background: url('assets/caso.png') right center / auto 199% no-repeat,
+                linear-gradient(to right, var(--celeste) 50%, var(--celeste) 50%);
+  }
+}
