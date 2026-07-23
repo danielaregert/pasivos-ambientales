@@ -224,12 +224,13 @@ La contaminación queda.</h3>
                 <p class="barlow-semibold text-md md:text-xl text-white mt-3 md:pe-20">Si querés recibir información, conocer nuevas investigaciones o acompañar iniciativas vinculadas a la remediación de pasivos ambientales en Chubut, dejá tus datos.</p>
                 </div>
                 <div>
-                    <form class="flex flex-col gap-3">
-                        <input type="text" placeholder="Nombre" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
-                        <input type="text" placeholder="Apellido" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
-                        <input type="email" placeholder="Correo" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
-                        <input type="tel" placeholder="Celular (opcional)" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
+                    <form id="sumate-form" class="flex flex-col gap-3">
+                        <input type="text" name="nombre" required placeholder="Nombre" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
+                        <input type="text" name="apellido" required placeholder="Apellido" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
+                        <input type="email" name="correo" required placeholder="Correo" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
+                        <input type="tel" name="celular" placeholder="Celular (opcional)" class="bg-white rounded-[20px] px-4 py-3 placeholder-[#6b6b6b] barlow-medium md:text-lg outline-none">
                         <button type="submit" class="rounded-full md:mt-4 self-start bg-brand-celeste text-brand-negro barlow-medium uppercase font-black text-xl py-2 px-8 hover:bg-brand-negro hover:text-brand-celeste border-2 border-brand-celeste min-w-[150px]">Enviar</button>
+                        <p id="sumate-form-status" class="barlow-medium text-white text-sm"></p>
                     </form>
                 </div>
             </div>
@@ -310,6 +311,41 @@ La contaminación queda.</h3>
                     },
                 }
             );
+        });
+    </script>
+
+    <script>
+        const sumateForm = document.getElementById('sumate-form');
+        const sumateStatus = document.getElementById('sumate-form-status');
+        const SUMATE_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxrpraagNF6qpc19gDRe_LLBgK2HyzhnybksztBZD29PNzGBOvif8G0sQ04hVtRiQ1cqQ/exec';
+
+        sumateForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = sumateForm.querySelector('button[type="submit"]');
+            const data = Object.fromEntries(new FormData(sumateForm).entries());
+
+            submitBtn.disabled = true;
+            sumateStatus.textContent = 'Enviando...';
+
+            try {
+                const res = await fetch(SUMATE_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(data),
+                });
+                const result = await res.json();
+
+                if (result.ok) {
+                    sumateStatus.textContent = '¡Gracias! Recibimos tus datos.';
+                    sumateForm.reset();
+                } else {
+                    sumateStatus.textContent = 'Hubo un error, intentá de nuevo.';
+                }
+            } catch (err) {
+                sumateStatus.textContent = 'Hubo un error, intentá de nuevo.';
+            } finally {
+                submitBtn.disabled = false;
+            }
         });
     </script>
 
