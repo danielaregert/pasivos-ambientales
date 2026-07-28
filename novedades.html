@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            celeste: '#37e1ee',
+                            negro: '#111719',
+                        },
+                    },
+                    fontFamily: {
+                        barlow: ['"Barlow Condensed"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Novedades | Pasivos Ambientales</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-brand-negro text-brand-negro min-h-screen flex flex-col">
+
+    <nav class="absolute top-0 w-full md:bg-brand-black backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <span class="py-3 font-barlow text-2xl font-bold tracking-wide text-white block md:hidden invisible">
+                    PASIVOS AMBIENTALES
+                </span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-md font-medium text-white barlow-medium">
+                <a href="index.html" class="hover:text-brand-celeste transition-colors text-xl">Inicio</a>
+                <a href="que-son.html" class="hover:text-brand-celeste transition-colors text-xl">¿Qué son?</a>
+                <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors text-xl">Comodoro</a>
+                <a href="novedades.html" class="hover:text-brand-celeste transition-colors text-xl">Novedades</a>
+                <a href="proyecto.html" class="hover:text-brand-celeste transition-colors text-xl">Proyecto</a>
+                <a href="index.html#sumate" class="transition-colors text-xl bg-celeste px-6 py-4 md:mb-2 hover:text-black rounded-b-[20px]">Sumate</a>
+            </div>
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú" onclick="toggleMobileMenu(this)" class="nav-burger md:hidden text-white">
+                <svg class="icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg class="icon-close w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden text-brand-negro/80">
+        <a href="index.html" class="hover:text-brand-celeste transition-colors">Inicio</a>
+        <a href="que-son.html" class="hover:text-brand-celeste transition-colors">¿Qué son?</a>
+        <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors">Comodoro</a>
+        <a href="novedades.html" class="hover:text-brand-celeste transition-colors">Novedades</a>
+        <a href="proyecto.html" class="hover:text-brand-celeste transition-colors">Proyecto</a>
+        <a href="index.html#sumate" class="hover:text-brand-celeste transition-colors">Sumate</a>
+    </div>
+
+    <main class="flex-1">
+
+<section class="bg-brand-negro px-6 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h1 class="uppercase text-center hero-title text-white font-barlow text-6xl md:text-9xl font-black tracking-wide flex flex-col"><span><span class="relative -top-1 md:-top-3"></span></span>Novedades</h1>
+
+        <h2 class="text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium">Información, investigaciones, documentos y noticias vinculadas a los pasivos ambientales hidrocarburíferos en Chubut y la Cuenca del Golfo San Jorge. Conocé las principales novedades sobre la evolución de esta problemática, iniciativas legislativas, decisiones judiciales y administrativas, estudios técnicos y hechos relevantes relacionados con la remediación ambiental y la responsabilidad de las empresas.
+ </h2>
+
+        <div class="swiper notas-swiper mt-12">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="border border-white/20 overflow-hidden">
+                        <img src="assets/nota-1.png" alt="Nota 1" class="w-full h-48 object-cover"/>
+                        <div class="p-6 min-h-[234px]">
+                            <h3 class="text-white barlow-bold text-xl font-semibold mb-3">YPF abandona Chubut</h3>
+                            <p class="text-white/60 barlow-medium text-md md:text-lg mb-6">Dejó la provincia sin remediar los pasivos ambientales y con pozos en estado crítico.</p>
+                            <a href="#" class="inline-block bg-celeste text-black barlow-semibold text-md font-medium px-6 py-2 rounded-full hover:opacity-90 transition-opacity">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border border-white/20 overflow-hidden min-h-[234px]">
+                        <img src="assets/nota-2.png" alt="Nota 2" class="w-full h-48 object-cover"/>
+                        <div class="p-6 min-h-[234px]">
+                            <h3 class="text-white barlow-bold text-xl font-semibold mb-3">Derrames en Comodoro</h3>
+                            <p class="text-white/60 barlow-medium text-md md:text-lg mb-6">Los incidentes ambientales vienen encendiendo alarmas desde hace varios años.</p>
+                            <a href="#" class="inline-block bg-celeste text-black barlow-semibold text-md font-medium px-6 py-2 rounded-full hover:opacity-90 transition-opacity">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border border-white/20 overflow-hidden">
+                        <img src="assets/nota-3.png" alt="Nota 3" class="w-full h-48 object-cover"/>
+                        <div class="p-6 min-h-[234px]">
+                            <h3 class="text-white barlow-bold text-xl font-semibold mb-3">Los pozos fantasma</h3>
+                            <p class="text-white/60 barlow-medium text-md md:text-lg mb-6">El deslizamiento del Cerro Hermitte sacó a la luz el abandono irregular de pozos petroleros.</p>
+                            <a href="#" class="inline-block bg-celeste text-black barlow-semibold text-md font-medium px-6 py-2 rounded-full hover:opacity-90 transition-opacity">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notas-pagination md:hidden flex justify-center mt-6"></div>
+        </div>
+    </div>
+
+</section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const notasSwiper = new Swiper('.notas-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            pagination: {
+                el: '.notas-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                    allowTouchMove: false,
+                    simulateTouch: false,
+                },
+            },
+        });
+
+        function toggleMobileMenu(btn) {
+            const menu = document.getElementById('mobile-menu');
+            const isOpen = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
+            btn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            document.body.classList.toggle('nav-open', isOpen);
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btn = document.querySelector('.nav-burger');
+            menu.classList.remove('open');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('nav-open');
+        }
+        document.querySelectorAll('#mobile-menu a').forEach(a => {
+            a.addEventListener('click', closeMobileMenu);
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach(el => {
+            gsap.fromTo(el,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>

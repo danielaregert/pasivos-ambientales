@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            celeste: '#37e1ee',
+                            negro: '#111719',
+                        },
+                    },
+                    fontFamily: {
+                        barlow: ['"Barlow Condensed"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>El caso de Comodoro Rivadavia | Pasivos Ambientales</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-brand-negro text-brand-negro min-h-screen flex flex-col">
+
+    <nav class="absolute top-0 w-full md:bg-brand-black backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <span class="py-3 font-barlow text-2xl font-bold tracking-wide text-white block md:hidden invisible">
+                    PASIVOS AMBIENTALES
+                </span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-md font-medium text-white barlow-medium">
+                <a href="index.html" class="hover:text-brand-celeste transition-colors text-xl">Inicio</a>
+                <a href="que-son.html" class="hover:text-brand-celeste transition-colors text-xl">¿Qué son?</a>
+                <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors text-xl">Comodoro</a>
+                <a href="novedades.html" class="hover:text-brand-celeste transition-colors text-xl">Novedades</a>
+                <a href="proyecto.html" class="hover:text-brand-celeste transition-colors text-xl">Proyecto</a>
+                <a href="index.html#sumate" class="transition-colors text-xl bg-celeste px-6 py-4 md:mb-2 hover:text-black rounded-b-[20px]">Sumate</a>
+            </div>
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú" onclick="toggleMobileMenu(this)" class="nav-burger md:hidden text-white">
+                <svg class="icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg class="icon-close w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden text-brand-negro/80">
+        <a href="index.html" class="hover:text-brand-celeste transition-colors">Inicio</a>
+        <a href="que-son.html" class="hover:text-brand-celeste transition-colors">¿Qué son?</a>
+        <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors">Comodoro</a>
+        <a href="novedades.html" class="hover:text-brand-celeste transition-colors">Novedades</a>
+        <a href="proyecto.html" class="hover:text-brand-celeste transition-colors">Proyecto</a>
+        <a href="index.html#sumate" class="hover:text-brand-celeste transition-colors">Sumate</a>
+    </div>
+
+    <main class="flex-1">
+
+<section class="bg-brand-negro px-6 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h1 class="uppercase text-center hero-title text-white font-barlow text-6xl md:text-9xl font-black tracking-wide flex flex-col"><span><span class="relative -top-1 md:-top-3"></span>El caso de</span>Comodoro Rivadavia</h1>
+
+        <h2 class="text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium">La ciudad en la que nació el petróleo argentino.
+El caso testigo de los pasivos ambientales a nivel nacional. </h2>
+
+       <img src="assets/caso-1.png" alt="Nota 1" class="mx-auto w-full max-w-4xl py-6 md:py-12 object-cover"/>
+       <div class="max-w-3xl mx-auto">
+        <p class="text-white barlow-medium text-md md:text-lg">
+  Comodoro Rivadavia ocupa un lugar único en la historia energética argentina. Aquí se descubrió el primer pozo de petróleo del país, el 13 de diciembre de 1907. Quince años más tarde nació YPF, la empresa que impulsó el desarrollo de la industria hidrocarburífera nacional. Durante más de un siglo, la ciudad creció junto al petróleo y se convirtió en uno de los principales polos productivos de la Cuenca del Golfo San Jorge.
+</p>
+
+<p class="text-white barlow-medium text-md md:text-lg">
+Ese mismo desarrollo dejó una huella que hoy forma parte del principal desafío ambiental de la región. A medida que los yacimientos convencionales envejecen, las grandes operadoras trasladan sus inversiones hacia otras cuencas, y miles de pozos e instalaciones requieren tareas de cierre y remediación.
+
+</p>
+
+<p class="text-white barlow-medium text-md md:text-lg">
+Con la reversión de yacimientos y el retiro de YPF de la provincia, Comodoro Rivadavia se transformó en el principal caso testigo de los pasivos ambientales hidrocarburíferos en la Argentina: un territorio donde conviven más de cien años de actividad petrolera con la necesidad de reparar los impactos que dejó esa actividad.
+</p>
+
+<p class="text-white barlow-medium text-md md:text-lg">La ciudad refleja una realidad que también alcanza a otras localidades de la Cuenca del Golfo San Jorge. El retiro progresivo de empresas de las áreas maduras plantea un desafío común: garantizar que el cierre de la actividad no implique abandonar las obligaciones ambientales ni trasladar esos costos al Estado o a la comunidad.
+</p>
+<p class="text-white barlow-medium text-md md:text-lg">La remediación de los pasivos es parte del proceso productivo y constituye una condición indispensable para una transición energética ordenada y responsable.
+</p>
+
+  <img src="assets/caso-2.png" alt="Nota 1" class="mx-auto w-full max-w-4xl py-6 md:py-12 object-cover"/>
+
+<h2 class="pb-6 md:pn-12 text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl barlow-medium">Una situación impostergable</h2>
+
+
+<p class="text-white barlow-medium text-md md:text-lg">En el ejido urbano de Comodoro Rivadavia existen aproximadamente:
+
+</p>
+
+  <ul class="text-white text-center barlow-medium text-md md:text-xl">
+    <li>+6.000 pozos petroleros </li>
+
+    <li>+3.500 pozos abandonados </li>
+
+    <li>+1.000 pozos inactivos</li>
+
+    <li>+100 sitios en estado crítico</li>
+  </ul>
+
+
+<h2 class="py-6 md:py-12 text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl barlow-medium flex flex-col">¿Por qué Comodoro
+es el caso testigo??</h2>
+
+
+<p class="text-white barlow-medium text-md md:text-lg">
+ Porque reúne, en un mismo territorio, las principales características del problema que enfrentan las cuencas maduras de la Argentina:
+</p>
+
+  <ul class="text-white barlow-medium text-md md:text-lg">
+    <li>• Más de un siglo de actividad petrolera.</li>
+
+    <li>• Miles de pozos distribuidos dentro del ejido urbano.</li>
+
+    <li>• Yacimientos convencionales en declinación.</li>
+
+    <li>• Empresas que trasladan inversiones hacia otras cuencas.</li>
+
+    <li>• Pasivos ambientales que requieren identificación, monitoreo y remediación.</li>
+
+    <p class="text-white barlow-medium text-md md:text-lg">
+ La necesidad de que quienes desarrollaron la actividad también asuman la responsabilidad de reparar los daños que dejaron.
+</p>
+
+  </ul>
+
+       </div>
+
+
+<h2 class="pt-6 md:pt-12 flex flex-col text-celeste font-bold text-2xl md:text-5xl mt-4 barlow-medium text-center"><span></span>
+La historia de Comodoro Rivadavia también <span></span> es la historia del petróleo argentino. </h2>
+<h2 class="pb-6 md:pb-12  flex flex-col text-white font-bold text-2xl md:text-5xl mt-4 barlow-medium text-center mb-12"> <span></span>
+Hoy, esa historia incorpora un nuevo desafío: garantizar que el cierre de una etapa productiva vaya acompañado de la remediación ambiental que el territorio y sus comunidades necesitan.</h2>
+
+<img src="assets/arrow.png" alt="Volver arriba" class="mx-auto w-8 md:w-10 mt-6 rotate-90"/>
+      </div>
+
+</section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function toggleMobileMenu(btn) {
+            const menu = document.getElementById('mobile-menu');
+            const isOpen = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
+            btn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            document.body.classList.toggle('nav-open', isOpen);
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btn = document.querySelector('.nav-burger');
+            menu.classList.remove('open');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('nav-open');
+        }
+        document.querySelectorAll('#mobile-menu a').forEach(a => {
+            a.addEventListener('click', closeMobileMenu);
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach(el => {
+            gsap.fromTo(el,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>

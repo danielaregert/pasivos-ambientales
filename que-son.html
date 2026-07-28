@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            celeste: '#37e1ee',
+                            negro: '#111719',
+                        },
+                    },
+                    fontFamily: {
+                        barlow: ['"Barlow Condensed"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>¿Qué son los Pasivos Ambientales? | Pasivos Ambientales</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-brand-negro text-brand-negro min-h-screen flex flex-col">
+
+    <nav class="absolute top-0 w-full md:bg-brand-black backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <span class="py-3 font-barlow text-2xl font-bold tracking-wide text-white block md:hidden invisible">
+                    PASIVOS AMBIENTALES
+                </span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-md font-medium text-white barlow-medium">
+                <a href="index.html" class="hover:text-brand-celeste transition-colors text-xl">Inicio</a>
+                <a href="que-son.html" class="hover:text-brand-celeste transition-colors text-xl">¿Qué son?</a>
+                <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors text-xl">Comodoro</a>
+                <a href="novedades.html" class="hover:text-brand-celeste transition-colors text-xl">Novedades</a>
+                <a href="proyecto.html" class="hover:text-brand-celeste transition-colors text-xl">Proyecto</a>
+                <a href="index.html#sumate" class="transition-colors text-xl bg-celeste px-6 py-4 md:mb-2 hover:text-black rounded-b-[20px]">Sumate</a>
+            </div>
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú" onclick="toggleMobileMenu(this)" class="nav-burger md:hidden text-white">
+                <svg class="icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg class="icon-close w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden text-brand-negro/80">
+        <a href="index.html" class="hover:text-brand-celeste transition-colors">Inicio</a>
+        <a href="que-son.html" class="hover:text-brand-celeste transition-colors">¿Qué son?</a>
+        <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors">Comodoro</a>
+        <a href="novedades.html" class="hover:text-brand-celeste transition-colors">Novedades</a>
+        <a href="proyecto.html" class="hover:text-brand-celeste transition-colors">Proyecto</a>
+        <a href="index.html#sumate" class="hover:text-brand-celeste transition-colors">Sumate</a>
+    </div>
+
+    <main class="flex-1">
+
+<section class="bg-brand-negro px-6 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h1 class="uppercase text-center hero-title text-white font-barlow text-6xl md:text-9xl font-black tracking-wide flex flex-col"><span><span class="relative -top-1 md:-top-3">¿</span>Qué son los </span>Pasivos Ambientales?</h1>
+
+        <h2 class="text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium">Los pasivos ambientales hidrocarburíferos son las consecuencias que deja la actividad petrolera cuando un pozo, un yacimiento o una instalación dejan de producir sin que se completen adecuadamente las tareas de cierre, abandono y remediación. </h2>
+
+       <img src="assets/que-son.png" alt="Nota 1" class="mx-auto w-full max-w-4xl py-6 md:py-12 object-cover"/>
+       <div class="max-w-3xl mx-auto">
+        <p class="text-white barlow-medium text-md md:text-lg">
+  Se trata de pozos mal sellados, instalaciones deterioradas, derrames, residuos peligrosos y contaminación del suelo o del agua. También comprenden cualquier daño o afectación que represente un riesgo actual o potencial para las personas, los ecosistemas o el ambiente.
+</p>
+
+<p class="text-white barlow-medium text-md md:text-lg">
+  En Chubut, el problema adquiere una dimensión particular. La actividad hidrocarburífera lleva más de un siglo y dejó miles de pozos e instalaciones distribuidos en la Cuenca del Golfo San Jorge. Muchos fueron cerrados con técnicas antiguas, permanecen inactivos o nunca completaron las tareas necesarias para garantizar que no generen riesgos en el futuro. A medida que las grandes operadoras trasladan sus inversiones hacia otras cuencas, la identificación y remediación de esos pasivos se vuelve cada vez más urgente.
+</p>
+
+<p class="text-white barlow-medium text-md md:text-lg">
+  El problema no termina cuando deja de extraerse petróleo. El cierre de un pozo requiere sellado técnico, desmantelamiento de instalaciones, tratamiento de residuos, remediación de suelos y aguas y monitoreo posterior. Cuando esas obligaciones no se cumplen, el daño permanece en el territorio y el costo corre el riesgo de trasladarse a toda la comunidad.
+</p>
+
+<h2 class="py-6 md:py-12 text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl barlow-medium flex flex-col">¿Qué puede convertirse <span></span> en un pasivo ambiental?</h2>
+
+<ul class="text-white barlow-medium text-md md:text-lg">
+   <li>• Pozos inactivos o abandonados: cuando dejan de producir y no fueron cerrados, sellados y remediados de acuerdo con las normas vigentes.</li>
+
+<li>• Derrames y fugas: pérdidas de petróleo, gas u otras sustancias que afectan el suelo, el agua, el aire o la vegetación.</li>
+
+<li>• Residuos de perforación: lodos, fluidos y sustancias peligrosas que permanecen sin tratamiento adecuado.</li>
+
+<li>• Instalaciones abandonadas: ductos, cañerías, tanques, baterías y otras estructuras que pueden deteriorarse, corroerse o seguir generando contaminación.</li>
+
+<li>• Suelos y aguas contaminadas: áreas afectadas por décadas de explotación que todavía requieren saneamiento y monitoreo.</li>
+
+<li>• La actividad en un pozo no termina cuando se extrae la última gota de petróleo. El proceso termina cuando se cierra de manera segura, se remedia el ambiente afectado y se comprueba que ya no existe riesgo para la comunidad.</li>
+</ul>
+<img src="assets/que-son-2.jpg" alt="Nota 1" class="mx-auto w-full max-w-4xl py-6 md:py-12 object-cover"/>
+
+<h2 class="pb-6 md:pb-12 text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl barlow-medium flex flex-col">¿Cómo impactan en
+ <span></span> la vida de las personas?</h2>
+
+
+<p class="text-white barlow-medium text-md md:text-lg">
+  Cuando un pozo o una instalación no son correctamente cerrados y remediados, las consecuencias pueden extenderse durante años y afectar directamente la vida cotidiana de la comunidad. La contaminación del suelo y del agua, los riesgos para la salud, las limitaciones para el uso futuro de la tierra y los costos económicos de la remediación terminan siendo asumidos por toda la sociedad.
+</p>
+
+<p class="text-white barlow-medium text-md md:text-lg">
+El deterioro de la infraestructura abandonada, la posibilidad de derrames, filtraciones o emisiones y la necesidad permanente de monitoreo convierten a los pasivos ambientales en un problema que trasciende a la industria y compromete la calidad de vida de las generaciones presentes y futuras.
+Cuando un pasivo ambiental no se remedia a tiempo, afecta no sólo los ecosistemas sino también la salud y la seguridad de las personas, el desarrollo de las ciudades y el futuro de las comunidades.
+</p>
+
+<ul  class="text-white barlow-medium text-md md:text-lg">
+    <li>• Salud pública: aumentan los riesgos asociados a la exposición a sustancias contaminantes y afectan la calidad de vida de las comunidades.</li>
+
+<li>• Agua y suelo: pueden contaminar cursos de agua, napas y suelos, comprometiendo su recuperación y sus usos futuros.</li>
+
+<li>• Fauna y biodiversidad: el deterioro del ambiente impacta sobre la flora, la fauna y el equilibrio de los ecosistemas.</li>
+
+<li>• Seguridad: pozos e instalaciones abandonadas representan riesgos por derrumbes, filtraciones, emisiones o accidentes.</li>
+
+<li>• Desarrollo urbano: limitan el crecimiento de las ciudades y dificultan nuevos usos del territorio.</li>
+
+<li>• Economía local: cuando las empresas no remedian los daños, los costos terminan recayendo sobre toda la sociedad.</li>
+
+<li>• Empleo: la remediación también representa una oportunidad para generar trabajo calificado y sostener el empleo durante la transición energética.</li>
+</ul>
+
+<img src="assets/que-son-3.jpg" alt="Nota 1" class="mx-auto w-full max-w-4xl py-6 md:py-12 object-cover"/>
+
+<h2 class="flex flex-col text-white font-bold text-2xl md:text-5xl mt-4 barlow-medium text-center"><span></span>
+Los pasivos ambientales<span></span>
+son un desafío que condiciona<span></span>
+la salud, el ambiente, la economía<span></span>
+y el futuro de Chubut.</h2>
+<h2 class="flex flex-col text-celeste font-bold text-2xl md:text-5xl mt-4 barlow-medium text-center mb-12"> <span></span>
+El problema es urgente<span></span>
+y la solución requiere participación.</h2>
+
+<a href="assets/Proyecto-Remediación-Pasivos-Ambientales.pdf"  class="block w-fit mx-auto bg-brand-celeste text-brand-negro barlow-medium uppercase font-bold text-lg py-3 px-8 rounded-full hover:bg-brand-negro hover:text-brand-celeste border-2 border-brand-celeste whitespace-nowrap">Descargá el proyecto</a>
+
+<img src="assets/arrow.png" alt="Volver arriba" class="mx-auto w-8 md:w-10 mt-6 rotate-90"/>
+
+       </div>
+    </div>
+
+
+
+
+
+</section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function toggleMobileMenu(btn) {
+            const menu = document.getElementById('mobile-menu');
+            const isOpen = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
+            btn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            document.body.classList.toggle('nav-open', isOpen);
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btn = document.querySelector('.nav-burger');
+            menu.classList.remove('open');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('nav-open');
+        }
+        document.querySelectorAll('#mobile-menu a').forEach(a => {
+            a.addEventListener('click', closeMobileMenu);
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach(el => {
+            gsap.fromTo(el,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>
