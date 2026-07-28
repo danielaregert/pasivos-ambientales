@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            celeste: '#37e1ee',
+                            negro: '#111719',
+                        },
+                    },
+                    fontFamily: {
+                        barlow: ['"Barlow Condensed"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo lo que tenés que saber sobre los Pasivos Ambientales en Chubut | Pasivos Ambientales</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-brand-negro text-brand-negro min-h-screen flex flex-col">
+
+    <nav class="bg-brand-negro absolute top-0 w-full md:bg-brand-black backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <span class="py-3 font-barlow text-2xl font-bold tracking-wide text-white block md:hidden invisible">
+                    PASIVOS AMBIENTALES
+                </span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-md font-medium text-white barlow-medium">
+                <a href="index.html" class="hover:text-brand-celeste transition-colors text-xl">Inicio</a>
+                <a href="que-son.html" class="hover:text-brand-celeste transition-colors text-xl">¿Qué son?</a>
+                <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors text-xl">Comodoro</a>
+                <a href="novedades.html" class="hover:text-brand-celeste transition-colors text-xl">Novedades</a>
+                <a href="proyecto.html" class="hover:text-brand-celeste transition-colors text-xl">Proyecto</a>
+                <a href="index.html#sumate" class="transition-colors text-xl bg-celeste px-6 py-4 md:mb-2 hover:text-black rounded-b-[20px]">Sumate</a>
+            </div>
+            <button type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú" onclick="toggleMobileMenu(this)" class="nav-burger md:hidden text-white">
+                <svg class="icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg class="icon-close w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden text-brand-negro/80">
+        <a href="index.html" class="hover:text-brand-celeste transition-colors">Inicio</a>
+        <a href="que-son.html" class="hover:text-brand-celeste transition-colors">¿Qué son?</a>
+        <a href="caso-comodoro.html" class="hover:text-brand-celeste transition-colors">Comodoro</a>
+        <a href="novedades.html" class="hover:text-brand-celeste transition-colors">Novedades</a>
+        <a href="proyecto.html" class="hover:text-brand-celeste transition-colors">Proyecto</a>
+        <a href="index.html#sumate" class="hover:text-brand-celeste transition-colors">Sumate</a>
+    </div>
+
+    <main class="flex-1">
+
+<article class="bg-brand-negro">
+
+    <div class="w-full md:h-[480px] overflow-hidden">
+        <img src="assets/portada-todo.png" alt="Todo lo que tenés que saber sobre los Pasivos Ambientales en Chubut" class="w-full h-full object-cover"/>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+        <nav aria-label="breadcrumb" class="mb-6">
+            <a href="novedades.html" class="text-celeste barlow-medium text-sm md:text-base hover:underline">Novedades</a>
+        </nav>
+
+        <h1 class="text-white font-barlow text-4xl md:text-7xl font-black tracking-wide mb-8 uppercase text-center flex flex-col">Todo lo que <span></span> tenés que saber</h1>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium">Preguntas y respuestas sobre los Pasivos Ambientales en Chubut
+       </h2>
+
+<h2 class="pt-6 md:pt-12 uppercase text-center flex flex-col text-white font-bold text-2xl md:text-5xl mt-4 barlow-medium flex flex-col">
+  PARTE 1 — LA HISTORIA <span></span> Y EL RECLAMO
+       </h2>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">1. ¿Por qué Comodoro Rivadavia <span></span>
+es el caso testigo?
+       </h2>
+
+<p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Comodoro Rivadavia creció con el petróleo: allí se descubrió el primer pozo del país en 1907 y se construyó YPF, la primera empresa petrolera estatal verticalmente integrada de América Latina. Esa relación de "construcción mutua" es hoy el reverso del problema: la migración del capital hacia Vaca Muerta dejó a la Cuenca del Golfo San Jorge en declive estructural. En el ejido urbano de Comodoro hay más de 6.000 pozos perforados, alrededor de 1.700 inactivos y unos 3.700 abandonados, en su mayoría con técnicas anteriores a 1996. Al menos 110 pozos están en condición crítica.
+</p>
+
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">2. ¿Cuánto cuesta remediar
+<span></span>
+un pozo en zona urbana?
+       </h2>
+
+<p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+El costo de abandono definitivo por pozo en área urbana oscila entre USD 65.000 y USD 200.000, y puede superar ese techo en pozos complejos. A la fecha, no existe ningún fondo de remediación activo: el dinero disponible es, literalmente, cero. La brecha entre el costo de sanear el ejido y los recursos comprometidos es el corazón económico del caso.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">3. ¿Qué pasó con el acuerdo
+
+<span></span>
+YPF–Chubut por Restinga Alí?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+El 19 de junio de 2025, el gobernador Ignacio Torres y YPF firmaron un acta acuerdo para revertir el área Restinga Alí, que tiene 559 pozos (216 onshore y 343 offshore) y estaba agotada. YPF paga USD 25 millones, un monto que el propio acuerdo define como "contraprestación extraordinaria" a cambio de una cláusula de indemnidad. Si se reparten esos USD 25 millones entre los 559 pozos, dan USD 44.723 por pozo, cuando el costo de abandono por pozo en zona urbana oscila entre USD 65.000 y USD 200.000. En junio de 2026, ese mismo esquema se replicó para seis áreas adicionales (El Tordillo, La Tapera, Puesto Quiroga, Escalante-El Trébol, Campamento Central-Cañadón Perdido y Manantiales Behr), también por otros USD 25 millones.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">4. ¿Qué es la cláusula de indemnidad
+
+<span></span>
+y por qué es problemática?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Es la parte del acuerdo por la cual la Provincia renuncia a reclamos presentes y futuros vinculados a los pozos del área, a los pasivos offshore y a cualquier contingencia que surja de nuevas explotaciones por terceros. Cubre incluso "reclamos que pudieran surgir a futuro por nuevas explotaciones llevadas a cabo por terceros". El proyecto señala que esta cláusula es jurídicamente vulnerable: el artículo 30 in fine de la Ley General del Ambiente (N° 25.675) declara de orden público e irrenunciable la acción de recomposición del daño ambiental colectivo, y ninguna norma provincial ni acto legislativo puede extinguir esa acción.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">5. ¿Qué diferencia hay entre el acuerdo
+
+<span></span>
+de Chubut y el de Santa Cruz?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+En Santa Cruz, YPF firmó en 2025 un acuerdo de 335 millones de dólares —más de 10 veces lo acordado en Chubut— que incluyó un programa concreto de saneamiento ambiental y la creación de una mesa de trabajo. En Neuquén, la provincia exigió fideicomisos, garantías y un plan de abandono de hasta 2.000 pozos. Chubut, en cambio, aceptó USD 25 millones y renunció a cualquier reclamo futuro. Las auditorías en Chubut fueron presentadas por YPF; no se conoce qué tipo de análisis realizó la Provincia con sus propios técnicos para considerar esos USD 25 millones como una paga justa. El Municipio de Comodoro Rivadavia —titular del ejido donde están la mayoría de los pozos— no fue parte del acuerdo ni recibió contraprestación alguna.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">6. ¿Qué propone la propuesta general como
+
+<span></span>
+"transición energética justa" para Comodoro?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+La propuesta plantea que la transición debe ser ordenada y cuidar a las familias y empresas comodorenses que dependen de la actividad. Los principios que se desprenden son: el que contamina paga —con un fondo sectorial obligatorio—; la remediación como fuente de empleo calificado y seguridad en áreas hoy abandonadas; la diversificación productiva (energías renovables, hidrógeno verde, solar); la reconversión industrial de las empresas de servicios petroleros, cuyas capacidades son transferibles a otros sectores; y el diseño participativo con trabajadores, sindicatos y sociedad civil. El cierre de un pozo se plantea como una etapa más del proceso productivo y como una oportunidad de reconversión, no como el final del trabajo en una cuenca.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">7. ¿Qué lecciones de otros países
+
+<span></span>
+sirven para pensar la salida de YPF?
+       </h2>
+
+
+<p class="pt-6 md:pt-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+• Estados Unidos: la Bipartisan Infrastructure Law (2021) destinó USD 4.700 millones al taponamiento de pozos huérfanos. Aun así, en estados como Texas, Louisiana y Nuevo México las garantías exigidas a los operadores no cubren los pasivos reales.
+</p>
+
+<p class="max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Canadá (Alberta): la Orphan Well Association gestiona pozos huérfanos con un gravamen a la industria, pero la provincia debió sumar subsidios y préstamos; el regulador estima el pasivo total en el orden de los CAD 100.000 millones. La lección: aun con un sistema de garantías, el modelo puede quedar crónicamente subfinanciado.
+</p>
+
+<p class="max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+• Reino Unido: el desmantelamiento offshore del Mar del Norte muestra que la misma industria que extrajo petróleo puede liderar el "decommissioning" y la reconversión a eólica marina, generando empleo calificado.
+</p>
+
+<p class="pb-6 md:pb-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+• España: el Acuerdo Marco para una Transición Justa de la Minería del Carbón (2018) combinó prejubilaciones, bolsas de empleo y prioridad de los excedentes mineros en tareas de restauración ambiental. Es un contramodelo a las transiciones abruptas: hoy el 70% de la electricidad de España se genera con renovables.
+</p>
+
+<h2 class="pt-6 md:pt-12 uppercase text-center flex flex-col text-white font-bold text-2xl md:text-5xl mt-4 barlow-medium flex flex-col">
+  PARTE 2 — El <span></span> proyecto de ley
+       </h2>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">8. ¿Qué es el proyecto de ley
+
+<span></span>
+y qué propone?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Es una iniciativa del diputado nacional José Glinski (UxP – Chubut) que crea la "Ley de Presupuestos Mínimos para la Remediación de Pasivos Ambientales Hidrocarburíferos y Transición Energética Justa". El proyecto busca cubrir un vacío normativo: evitar que los costos ambientales de la explotación de petróleo y gas queden a cargo del Estado y la comunidad, en un momento en que las grandes operadoras se retiran de las cuencas maduras para invertir en formaciones no convencionales como Vaca Muerta.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">9. ¿Qué se entiende por
+
+<span></span>
+"pasivo ambiental hidrocarburífero"?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Es toda alteración, daño, contaminación o afectación del ambiente derivada de las actividades hidrocarburíferas —exploración, explotación, transporte, almacenamiento, industrialización, abandono y cierre de pozos— que implique un riesgo actual o potencial para el ambiente, la salud de las personas o los ecosistemas.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">10. ¿Qué diferencia hay entre pozo maduro,
+
+<span></span>
+inactivo, abandonado y huérfano?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+El proyecto define por primera vez en una ley nacional cuatro categorías que antes no estaban tipificadas:
+<br><br>
+- Pozo maduro: tiene producción declinante y rentabilidad reducida.
+<br><br>
+- Pozo inactivo: lleva más de 12 meses sin producir ni inyectar.
+<br><br>
+- Pozo abandonado: está fuera de operación y no completó las tareas de cierre, sellado y remediación que exige la normativa.
+<br><br>
+- Pozo huérfano: es un pozo abandonado sin un operador solvente o responsable identificable.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">11. ¿Quién tiene que pagar
+
+<span></span>
+la remediación?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Las empresas operadoras son las responsables, en forma objetiva y solidaria. La responsabilidad alcanza a la propia empresa, a las que cedieron o recibieron áreas, a las controlantes, controladas y a todo el grupo económico. Esa responsabilidad se mantiene aunque la empresa se haya disuelto, esté en quiebra, haya transferido la concesión o haya abandonado la actividad. Además, las acciones para exigir la recomposición del daño ambiental no prescriben.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">12. ¿Qué es el Fondo Federal de Recomposición
+
+<span></span>
+de Pasivos Ambientales Hidrocarburíferos?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Es un fondo que crea el proyecto para financiar, de manera exclusiva, las tareas de prevención, cierre, remediación ambiental y programas de reconversión y capacitación laboral. Se alimenta con aportes obligatorios de las empresas concesionarias, multas, aportes del Tesoro Nacional, donaciones y rendimientos financieros. Sus recursos son intangibles: no se pueden embargar ni integrar en concursos o quiebras.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">13. ¿Qué son las garantías
+
+<span></span>
+financieras obligatorias?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Toda empresa con concesiones hidrocarburíferas deberá constituir garantías suficientes para cubrir los costos de abandono técnico, cierre ambiental, remediación y monitoreo posterior. Pueden ser seguros ambientales, fideicomisos, cauciones, depósitos u otros instrumentos aprobados por la autoridad de aplicación. Es el instrumento central que, según el proyecto, evita que el costo termine en el Estado, como pasó en otros países con tradición hidrocarburífera.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">14. ¿Qué función tiene el Registro
+
+<span></span>
+Nacional de Pasivos Ambientales?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+Es un registro público, gratuito y de acceso irrestricto. Contendrá, como mínimo, la identificación y georreferenciación de pozos e instalaciones, su estado operativo, los operadores actuales e históricos, los riesgos ambientales, los incidentes registrados, el estado de remediación, los monitoreos y las garantías financieras constituidas. Hoy, según el proyecto, la opacidad permite que las operadoras operen con impunidad: en Chubut y Mendoza hay municipios que empezaron a hacer relevamientos propios porque el Estado nacional o provincial no tiene información sistemática.
+</p>
+
+       <h2 class="mx-auto max-w-3xl text-center flex flex-col text-celeste font-bold text-2xl md:text-4xl mt-4 barlow-medium flex flex-col">15. ¿Cómo se protege a los trabajadores
+
+<span></span>
+en este proceso?
+       </h2>
+
+ <p class="py-6 md:py-12 max-w-3xl mx-auto text-white barlow-medium text-md md:text-lg">
+El proyecto incorpora el principio de "transición energética justa": las tareas de cierre, abandono, remediación y monitoreo dejan de verse como un costo y se integran al proceso productivo como una etapa más, capaz de generar empleo calificado, reconversión laboral y capacitación para los trabajadores del sector. La idea central es que el cierre de un pozo no sea el final del trabajo en una cuenca, sino trabajo en sí mismo, realizado por quienes ya saben hacerlo: los trabajadores petroleros.
+</p>
+
+
+<img src="assets/arrow.png" alt="Volver arriba" class="mx-auto w-8 md:w-10 mt-6 rotate-90">
+
+    </div>
+
+</article>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function toggleMobileMenu(btn) {
+            const menu = document.getElementById('mobile-menu');
+            const isOpen = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(isOpen));
+            btn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            document.body.classList.toggle('nav-open', isOpen);
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btn = document.querySelector('.nav-burger');
+            menu.classList.remove('open');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('nav-open');
+        }
+        document.querySelectorAll('#mobile-menu a').forEach(a => {
+            a.addEventListener('click', closeMobileMenu);
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach(el => {
+            gsap.fromTo(el,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>
